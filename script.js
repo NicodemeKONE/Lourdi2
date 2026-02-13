@@ -50,7 +50,6 @@ window.addEventListener('scroll', () => {
 // ── Menu mobile ────────────────────────
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
-const navClose = document.getElementById('navClose');
 
 function openMenu() {
     navLinks.classList.add('open');
@@ -80,8 +79,6 @@ hamburger.addEventListener('keydown', (e) => {
         hamburger.click();
     }
 });
-
-navClose.addEventListener('click', closeMenu);
 
 navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', closeMenu);
