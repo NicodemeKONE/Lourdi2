@@ -46,6 +46,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Mesure d'audience GoatCounter : anonyme, sans cookies, pas de bandeau RGPD requis.
+         Remplacer "lourdi-mendes" par le code choisi à l'inscription sur goatcounter.com -->
+    <script data-goatcounter="https://lourdi-mendes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 
 <body>
@@ -99,8 +103,8 @@
                     <span class="tag-chip">HTML / CSS / JS</span>
                 </div>
                 <div class="hero-actions">
-                    <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download>
-                        <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV
+                    <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download="CV_Lourdi_Mendes.pdf" data-goatcounter-click="cv-telecharge-accueil" data-goatcounter-title="Téléchargement du CV (accueil)">
+                        <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV <span class="btn-hint">PDF · 1 page</span>
                     </a>
                     <a href="#contact" class="btn btn-outline">
                         <i class="fas fa-paper-plane" aria-hidden="true"></i> Me contacter
@@ -274,6 +278,7 @@
                     <div class="exp-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
                     <h3>Data et Business Intelligence</h3>
                     <ul class="skill-list">
+                        <li>Qualité des données</li>
                         <li>SQL (MySQL)</li>
                         <li>Excel avancé et VBA</li>
                         <li>Tableaux de bord et KPI</li>
@@ -297,7 +302,7 @@
                     <ul class="skill-list">
                         <li>R — analyse statistique</li>
                         <li>VBA — automatisation</li>
-                        <li>Python — bases</li>
+                        <li>Python (Pandas) — traitement de données</li>
                         <li>Jupyter et Google Colab</li>
                     </ul>
                 </div>
@@ -334,6 +339,30 @@
                  <a href="URL" class="proj-link" target="_blank" rel="noopener">Voir le projet <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                  à placer à la fin de .project-body -->
             <div class="projects-grid">
+                <article class="project-card project-featured reveal" data-category="data si">
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="ptag">Qualité des données</span>
+                            <span class="ptag">Power BI</span>
+                            <span class="ptag cyan">Python</span>
+                            <span class="ptag cyan">Cartographie</span>
+                        </div>
+                        <h3>Standard de qualité des données — accidents de la route en Charente-Maritime</h3>
+                        <p class="project-meta">Projet de fin de cours, Master 2 MSI · IAE La Rochelle · 2025</p>
+                        <p>Définition d'un standard de qualité pour les quatre fichiers de la base nationale des accidents corporels (BAAC 2023), sur le périmètre de la Charente-Maritime : 7 règles de contrôle réparties en 3 dimensions pondérées (complétude, validité, cohérence), calcul d'un score par fichier et recommandations priorisées. Restitution dans un tableau de bord Power BI et une carte interactive des accidents par commune.</p>
+                        <div class="project-kpis">
+                            <div><span class="kpi-value">97,3 %</span><span class="kpi-label">Score global de qualité</span></div>
+                            <div><span class="kpi-value">7</span><span class="kpi-label">Règles de contrôle</span></div>
+                            <div><span class="kpi-value">4</span><span class="kpi-label">Fichiers audités</span></div>
+                            <div><span class="kpi-value">79 %</span><span class="kpi-label">Complétude Usagers : priorité n°1</span></div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="projets/baac/carte.html" class="proj-link" target="_blank" rel="noopener" data-goatcounter-click="baac-carte" data-goatcounter-title="Projet BAAC : carte ouverte">Explorer la carte interactive <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="projets/baac/rapport_qualite_BAAC_2023.pdf" class="proj-link" target="_blank" rel="noopener" data-goatcounter-click="baac-rapport" data-goatcounter-title="Projet BAAC : rapport ouvert">Lire le rapport (PDF, 10 pages) <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="project-card reveal" data-category="dev">
                     <div class="project-body">
                         <div class="project-tags">
@@ -618,8 +647,8 @@
                         <h3>Mon CV en un clic</h3>
                         <p>Téléchargez mon CV au format PDF ou écrivez-moi directement pour discuter d'une opportunité de stage.</p>
                         <div class="cta-actions">
-                            <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download>
-                                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV
+                            <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download="CV_Lourdi_Mendes.pdf" data-goatcounter-click="cv-telecharge-contact" data-goatcounter-title="Téléchargement du CV (contact)">
+                                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV <span class="btn-hint">PDF · 1 page</span>
                             </a>
                             <a href="mailto:mendesmamita4@gmail.com?subject=Proposition%20de%20stage" class="btn btn-outline">
                                 <i class="fas fa-envelope" aria-hidden="true"></i> M'écrire
@@ -682,7 +711,7 @@
                     &copy; 2026 <span>Lourdi Mendes</span> — Tous droits réservés
                 </div>
                 <div class="footer-copy">
-                    La Rochelle / Paris <span>&#9670;</span> Mobilité nationale
+                    La Rochelle / Paris <span>&#9670;</span> Mobilité nationale <span>&#9670;</span> Mesure d'audience anonyme, sans cookies
                 </div>
             </div>
         </div>

@@ -760,6 +760,52 @@ a { text-decoration:none; color:inherit; }
     line-height: 1.7;
 }
 
+/* Projet phare : pleine largeur, chiffres clés */
+.project-featured { grid-column: 1 / -1; border-top-width: 3px; }
+.project-featured .project-body { padding: 2.25rem; }
+.project-featured h3 { font-size: 1.75rem; }
+
+.project-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.project-kpis > div { background: var(--bg); padding: 1rem 1.1rem; }
+
+.kpi-value {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--gold);
+}
+
+.kpi-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-top: 0.25rem;
+}
+
+.project-actions { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; }
+
+.btn-hint {
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
 .proj-link {
     display: inline-flex; align-items: center; gap: 0.4rem;
     margin-top: 1rem;
@@ -1166,6 +1212,9 @@ a { text-decoration:none; color:inherit; }
     .expertise-grid { grid-template-columns:1fr; }
     .qualities-grid { grid-template-columns:1fr; }
     .stat-cards { grid-template-columns:1fr 1fr; }
+    .project-kpis { grid-template-columns:1fr 1fr; }
+    .project-featured .project-body { padding: 1.5rem; }
+    .project-featured h3 { font-size: 1.45rem; }
     .stat-card { padding: 1.25rem; }
     .stat-number { font-size: 2.1rem; }
     .hero-availability { font-size: 0.85rem; border-radius: var(--radius-lg); text-align: left; }
