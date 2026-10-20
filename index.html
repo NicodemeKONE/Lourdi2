@@ -1,81 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Lourdi Mendes - Management des Systèmes d'Information, transformation digitale et gestion de projets SI">
+    <title>Lourdi Mendes — Étudiante M2 Management des SI | Recherche de stage</title>
+    <meta name="description" content="Lourdi Mendes, étudiante en Master 2 Management des Systèmes d'Information (IAE La Rochelle). Recherche un stage de 4 à 6 mois en gestion de projet SI ou transformation digitale, disponible immédiatement.">
     <meta name="author" content="Lourdi Mendes">
-    <title>Lourdi Mendes — Management SI & Transformation Digitale</title>
+    <link rel="canonical" href="https://lourdi-mendes.fr/">
+    <meta name="theme-color" content="#f9f6f1">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Aperçu lors d'un partage (LinkedIn, messageries…) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://lourdi-mendes.fr/">
+    <meta property="og:title" content="Lourdi Mendes — Étudiante M2 Management des SI">
+    <meta property="og:description" content="Recherche un stage de 4 à 6 mois en gestion de projet SI ou transformation digitale. Disponible immédiatement.">
+    <meta property="og:image" content="https://lourdi-mendes.fr/lourdi.jpg">
+    <meta property="og:image:alt" content="Photo de Lourdi Mendes">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Données structurées : aident Google à identifier la personne -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lourdi Mendes",
+        "url": "https://lourdi-mendes.fr/",
+        "image": "https://lourdi-mendes.fr/lourdi.jpg",
+        "email": "mailto:mendesmamita4@gmail.com",
+        "jobTitle": "Étudiante en Master 2 Management des Systèmes d'Information",
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "IAE La Rochelle" },
+            { "@type": "CollegeOrUniversity", "name": "Université de Caen Normandie" }
+        ],
+        "knowsAbout": ["Gestion de projet SI", "Transformation digitale", "Conduite du changement", "ERP", "CRM", "Business Intelligence", "Agile", "Scrum"],
+        "knowsLanguage": ["fr", "es", "en"],
+        "address": { "@type": "PostalAddress", "addressLocality": "La Rochelle", "addressCountry": "FR" },
+        "sameAs": ["https://www.linkedin.com/in/lourdi-mendes-2538161a4/"]
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
     <div class="progress-bar" id="progressBar"></div>
 
     <!-- NAVIGATION -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
         <div class="nav-inner">
-            <div class="nav-logo">
-                Lourdi  <span>Mendes</span>
-            </div>
+            <a href="#home" class="nav-logo">Lourdi <span>Mendes</span></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="active">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#expertise">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#contact" class="nav-cta">Collaborons</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Ouvrir le menu" aria-expanded="false">
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
+    <main>
+
     <!-- HERO -->
     <section id="home" class="hero">
         <div class="hero-inner">
             <div class="hero-text">
-                <div class="hero-eyebrow">Management SI & Transformation Digitale</div>
+                <div class="hero-eyebrow">Étudiante M2 Management des SI</div>
                 <h1 class="hero-title">
-                    Piloter la transformation<br>
-                    <em>de vos systèmes d'information</em>
+                    Lourdi
+                    <em>Mendes</em>
                 </h1>
+                <p class="hero-subtitle">Gestion de projet SI &amp; transformation digitale</p>
+                <p class="hero-availability">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Recherche un stage de 4 à 6 mois — disponible immédiatement
+                </p>
                 <p class="hero-desc">
-                    Spécialisée en management des SI, gestion de projets et conduite du changement. 
-                    Je mets la technologie au service de votre stratégie pour moderniser vos organisations.
+                    Étudiante à l'IAE La Rochelle, je fais le lien entre les équipes métier et techniques :
+                    analyse des besoins, pilotage de projet, tableaux de bord et accompagnement des utilisateurs.
                 </p>
                 <div class="hero-tags">
-                    <span class="tag-chip">Gestion de Projet SI</span>
+                    <span class="tag-chip">Gestion de projet SI</span>
                     <span class="tag-chip">Agile / Scrum</span>
+                    <span class="tag-chip">ERP / CRM</span>
                     <span class="tag-chip">Business Intelligence</span>
                     <span class="tag-chip">SQL</span>
                     <span class="tag-chip">HTML / CSS / JS</span>
-                    <span class="tag-chip">ERP / CRM</span>
                 </div>
                 <div class="hero-actions">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fas fa-user"></i> Découvrir mon profil
+                    <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV
                     </a>
                     <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-paper-plane"></i> Collaborons
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i> Me contacter
                     </a>
                 </div>
             </div>
 
             <div class="hero-visual">
                 <div class="orbit-container">
-                    <div class="orbit orbit-3"></div>
-                    <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
-                    <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+                    <div class="orbit orbit-1" aria-hidden="true"></div>
 
                     <div class="data-node node-1" data-label="Méthodes">
                         <span class="val">Agile / Scrum</span>
@@ -86,28 +121,26 @@
                     <div class="data-node node-3" data-label="Formation">
                         <span class="val">M2 MSI</span>
                     </div>
-                    <div class="data-node node-4" data-label="Efficacité">
-                        <span class="val">-30% délais</span>
+                    <div class="data-node node-4" data-label="Délai de traitement">
+                        <span class="val">-30 %</span>
                     </div>
 
                     <div class="profile-wrapper">
-                        <div class="profile-glow"></div>
-                        <div class="profile-img-ring"></div>
-                        <img class="profile-img" src="lourdi.jpg" alt="Lourdi Mendes">
-                        <div class="profile-scanner"></div>
+                        <div class="profile-img-ring" aria-hidden="true"></div>
+                        <img class="profile-img" src="lourdi.jpg" alt="Lourdi Mendes" width="520" height="476" fetchpriority="high">
                         <div class="profile-namecard">
                             <div class="pname">Lourdi Mendes</div>
-                            <div class="ploc">📍 La Rochelle / Paris</div>
+                            <div class="ploc">La Rochelle / Paris</div>
                         </div>
                         <div class="profile-socials">
-                            <a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
+                            <a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                             </a>
                             <a href="mailto:mendesmamita4@gmail.com" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </a>
                             <a href="tel:+33753105305" aria-label="Téléphone">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -125,52 +158,51 @@
                     <h2 class="section-title">À propos<br><em>de moi</em></h2>
 
                     <div class="about-text">
-                        <p>Étudiante en Master 2 Management des Systèmes d'Information, je suis passionnée par l'innovation technologique et la transformation digitale. Mon parcours combine compétences techniques, vision stratégique et sens du terrain pour accompagner les organisations dans leur modernisation.</p>
+                        <p>Étudiante en Master 2 Management des Systèmes d'Information à l'IAE La Rochelle, je m'intéresse à la façon dont les outils numériques transforment concrètement le travail des équipes. Mes expériences en développement web, en gestion et en analyse de données m'ont appris à partir des besoins des utilisateurs pour livrer des solutions utiles.</p>
                     </div>
 
                     <div class="about-quote">
-                        "Aligner la technologie avec la stratégie d'entreprise, c'est transformer chaque projet SI en levier de performance durable."
-                        <cite>— Lourdi Mendes</cite>
+                        Mon objectif : rejoindre une équipe projet SI pour contribuer à la transformation digitale d'une organisation, et continuer à apprendre sur le terrain.
                     </div>
 
                     <div class="approach-items">
                         <div class="approach-item">
-                            <div class="approach-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="approach-icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
                             <div class="approach-text">
-                                <h4>Pilotage de projets</h4>
-                                <p>Gestion agile et conduite du changement pour des livrables concrets et dans les délais</p>
+                                <h3>Pilotage de projets</h3>
+                                <p>Méthodes agiles et suivi rigoureux pour livrer des résultats concrets dans les délais</p>
                             </div>
                         </div>
                         <div class="approach-item">
-                            <div class="approach-icon"><i class="fas fa-users"></i></div>
+                            <div class="approach-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
                             <div class="approach-text">
-                                <h4>Alignement business-IT</h4>
-                                <p>Créer des ponts entre les équipes métier et techniques pour maximiser la valeur des SI</p>
+                                <h3>Alignement métier et IT</h3>
+                                <p>Traduire les besoins des équipes métier en solutions techniques adaptées</p>
                             </div>
                         </div>
                         <div class="approach-item">
-                            <div class="approach-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="approach-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
                             <div class="approach-text">
-                                <h4>Transformation digitale</h4>
-                                <p>Accompagner les organisations vers des processus optimisés et des outils adaptés</p>
+                                <h3>Transformation digitale</h3>
+                                <p>Optimiser les processus et accompagner les utilisateurs dans la prise en main des outils</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-right reveal" style="transition-delay:0.2s">
+                <div class="about-right reveal">
                     <div class="stat-cards">
                         <div class="stat-card">
-                            <div class="stat-number">3<sup>+</sup></div>
-                            <div class="stat-label">Ans d'expérience</div>
+                            <div class="stat-number">-30 %</div>
+                            <div class="stat-label">Temps de traitement des dossiers</div>
                         </div>
                         <div class="stat-card">
-                            <div class="stat-number">6<sup>+</sup></div>
-                            <div class="stat-label">Stages & missions</div>
+                            <div class="stat-number">50<sup>+</sup></div>
+                            <div class="stat-label">Enquêtes quantitatives</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-number">M2</div>
-                            <div class="stat-label">Management SI</div>
+                            <div class="stat-label">Management des SI</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-number">3</div>
@@ -180,24 +212,24 @@
 
                     <div class="highlight-cards">
                         <div class="highlight-card">
-                            <div class="hc-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="hc-icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
                             <div class="hc-text">
-                                <h4>Double compétence</h4>
-                                <p>Profil hybride alliant vision stratégique SI et compétences techniques en développement, data et BI.</p>
+                                <h3>Double compétence</h3>
+                                <p>Profil hybride alliant management des SI et compétences techniques en développement web, data et BI.</p>
                             </div>
                         </div>
                         <div class="highlight-card">
-                            <div class="hc-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="hc-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
                             <div class="hc-text">
-                                <h4>Formation solide</h4>
-                                <p>Master MSI à l'IAE La Rochelle : ERP, CRM, Business Intelligence, gouvernance SI et Change Management.</p>
+                                <h3>Formation solide</h3>
+                                <p>Master MSI à l'IAE La Rochelle : ERP, CRM, Business Intelligence, gouvernance SI et conduite du changement.</p>
                             </div>
                         </div>
                         <div class="highlight-card">
-                            <div class="hc-icon"><i class="fas fa-heart"></i></div>
+                            <div class="hc-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
                             <div class="hc-text">
-                                <h4>Engagement personnel</h4>
-                                <p>Bénévole associatif, animation d'ateliers pédagogiques, et implication dans des projets à impact social.</p>
+                                <h3>Engagement associatif</h3>
+                                <p>Animatrice bénévole à l'association AZMARI : ateliers créatifs pour plus de 30 enfants.</p>
                             </div>
                         </div>
                     </div>
@@ -211,75 +243,71 @@
         <div class="container">
             <div class="expertise-header reveal">
                 <div class="section-label">Compétences</div>
-                <h2 class="section-title">Expertise <em>Technique</em></h2>
-                <p class="section-desc">Un profil polyvalent au croisement du management SI, du développement et de la data</p>
+                <h2 class="section-title">Mes <em>compétences</em></h2>
+                <p class="section-desc">Un profil polyvalent au croisement du management des SI, du développement et de la data</p>
             </div>
 
-            <div class="expertise-grid reveal" style="transition-delay:0.2s">
+            <div class="expertise-grid reveal">
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-project-diagram"></i></div>
-                    <h3>Gestion de Projet SI</h3>
+                    <div class="exp-icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+                    <h3>Gestion de projet SI</h3>
                     <ul class="skill-list">
-                        <li>Méthodologies Agile & Scrum</li>
-                        <li>Pilotage et suivi de projets complexes</li>
-                        <li>Audit SI & recommandations stratégiques</li>
+                        <li>Méthodes Agile et Scrum</li>
+                        <li>Pilotage et suivi de projet</li>
+                        <li>Analyse des besoins</li>
                         <li>Conduite du changement</li>
-                        <li>Alignement business-IT</li>
+                        <li>Alignement métier et IT</li>
                     </ul>
                 </div>
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-code"></i></div>
-                    <h3>Développement Web</h3>
+                    <div class="exp-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                    <h3>Systèmes d'information</h3>
                     <ul class="skill-list">
-                        <li>HTML5, CSS3, JavaScript</li>
-                        <li>Conception de sites web</li>
-                        <li>Déploiement & formation utilisateurs</li>
-                        <li>Analyse des besoins fonctionnels</li>
-                        <li>Responsive design</li>
+                        <li>ERP et CRM</li>
+                        <li>Gouvernance SI</li>
+                        <li>Audit SI</li>
+                        <li>Transformation digitale</li>
+                        <li>Formation des utilisateurs</li>
                     </ul>
                 </div>
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-database"></i></div>
-                    <h3>Data & Business Intelligence</h3>
+                    <div class="exp-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                    <h3>Data et Business Intelligence</h3>
                     <ul class="skill-list">
-                        <li>MySQL, SQL — requêtes & analyse</li>
-                        <li>Excel avancé & VBA</li>
-                        <li>Tableaux de bord & KPIs</li>
-                        <li>Business Intelligence</li>
+                        <li>SQL (MySQL)</li>
+                        <li>Excel avancé et VBA</li>
+                        <li>Tableaux de bord et KPI</li>
+                        <li>Power BI, Tableau</li>
                         <li>Analyse statistique</li>
                     </ul>
                 </div>
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-server"></i></div>
-                    <h3>Systèmes d'Information</h3>
+                    <div class="exp-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                    <h3>Développement web</h3>
                     <ul class="skill-list">
-                        <li>ERP & CRM — gouvernance</li>
-                        <li>Transformation digitale</li>
-                        <li>Urbanisation des SI</li>
-                        <li>Change Management</li>
-                        <li>Conseil stratégique SI</li>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Conception de sites web</li>
+                        <li>Responsive design</li>
+                        <li>Déploiement</li>
                     </ul>
                 </div>
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="exp-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
                     <h3>Programmation</h3>
                     <ul class="skill-list">
                         <li>R — analyse statistique</li>
                         <li>VBA — automatisation</li>
                         <li>Python — bases</li>
-                        <li>SQL — exploitation de données</li>
-                        <li>Jupyter & Google Colab</li>
+                        <li>Jupyter et Google Colab</li>
                     </ul>
                 </div>
                 <div class="exp-card">
-                    <div class="exp-icon"><i class="fas fa-palette"></i></div>
-                    <h3>Design & Communication</h3>
+                    <div class="exp-icon"><i class="fas fa-palette" aria-hidden="true"></i></div>
+                    <h3>Communication</h3>
                     <ul class="skill-list">
-                        <li>Adobe InDesign</li>
-                        <li>Canva — supports visuels</li>
-                        <li>Design graphique</li>
                         <li>Rédaction de rapports</li>
-                        <li>Présentation & vulgarisation</li>
+                        <li>Présentation et vulgarisation</li>
+                        <li>Canva, Adobe InDesign</li>
                     </ul>
                 </div>
             </div>
@@ -291,93 +319,68 @@
         <div class="container">
             <div class="projects-header reveal">
                 <div class="section-label">Réalisations</div>
-                <h2 class="section-title">Portfolio de <em>Projets</em></h2>
-                <p class="section-desc">Projets significatifs en développement web, gestion de projet SI et analyse de données</p>
+                <h2 class="section-title">Mes <em>projets</em></h2>
+                <p class="section-desc">Projets réalisés en stage et en formation : développement web, management des SI et analyse de données</p>
             </div>
 
-            <div class="project-filters reveal" style="transition-delay:0.1s">
+            <div class="project-filters reveal">
                 <button class="filter-btn active" data-filter="all">Tous</button>
                 <button class="filter-btn" data-filter="dev">Développement</button>
                 <button class="filter-btn" data-filter="si">Management SI</button>
-                <button class="filter-btn" data-filter="data">Data & Analyse</button>
+                <button class="filter-btn" data-filter="data">Data et analyse</button>
             </div>
 
+            <!-- Pour ajouter un lien vers une réalisation (site en ligne, PDF anonymisé…) :
+                 <a href="URL" class="proj-link" target="_blank" rel="noopener">Voir le projet <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                 à placer à la fin de .project-body -->
             <div class="projects-grid">
-                <div class="project-card reveal" data-category="dev">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop" alt="Site Web ONG">
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-tags">
+                <article class="project-card reveal" data-category="dev">
+                    <div class="project-body">
+                        <div class="project-tags">
                             <span class="ptag">Web</span>
                             <span class="ptag cyan">ONG</span>
                         </div>
+                        <h3>Site web pour une ONG</h3>
+                        <p class="project-meta">Stage chez CODAPA · 2025</p>
+                        <p>Conception et développement complet d'un site web. Gestion autonome du projet : analyse des besoins, développement, déploiement et formation des utilisateurs.</p>
                     </div>
-                    <div class="project-body">
-                        <h3>Site Web pour une ONG</h3>
-                        <p>Conception et développement complet d'un site web chez CODAPA. Gestion autonome du projet : analyse des besoins, développement, déploiement et formation des utilisateurs.</p>
-                        <div class="project-links-row">
-                            <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="proj-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-                <div class="project-card reveal" data-category="si" style="transition-delay:0.1s">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop" alt="Audit SI">
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-tags">
+                <article class="project-card reveal" data-category="si">
+                    <div class="project-body">
+                        <div class="project-tags">
                             <span class="ptag">Audit SI</span>
                             <span class="ptag cyan">Stratégie</span>
                         </div>
+                        <h3>Audit SI et recommandations stratégiques</h3>
+                        <p class="project-meta">Projet fil rouge, Master 1 · 2024 – 2025</p>
+                        <p>Audit complet du système d'information d'une ETI et recommandations stratégiques pour l'alignement métier et IT.</p>
                     </div>
-                    <div class="project-body">
-                        <h3>Audit SI & Recommandations Stratégiques</h3>
-                        <p>Projet fil rouge en Master 1 : audit complet du système d'information d'une ETI avec recommandations stratégiques pour l'alignement business-IT.</p>
-                        <div class="project-links-row">
-                            <a href="#" class="proj-link"><i class="fas fa-file-alt"></i></a>
-                            <a href="#" class="proj-link"><i class="fas fa-chart-bar"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-                <div class="project-card reveal" data-category="data" style="transition-delay:0.15s">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=600&h=300&fit=crop" alt="Tableaux de bord">
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-tags">
+                <article class="project-card reveal" data-category="data">
+                    <div class="project-body">
+                        <div class="project-tags">
                             <span class="ptag">Excel VBA</span>
                             <span class="ptag">KPI</span>
                         </div>
+                        <h3>Automatisation de tableaux de bord</h3>
+                        <p class="project-meta">Stage chez Royallaux SAS · 2024</p>
+                        <p>Création et automatisation de tableaux de bord de suivi sous Excel VBA. Réduction de 30 % du temps de traitement des dossiers.</p>
                     </div>
-                    <div class="project-body">
-                        <h3>Automatisation Tableaux de Bord</h3>
-                        <p>Création et automatisation de tableaux de bord de suivi chez Royallaux SAS via Excel VBA. Réduction de 30% du temps de traitement des dossiers.</p>
-                        <div class="project-links-row">
-                            <a href="#" class="proj-link"><i class="fas fa-chart-line"></i></a>
-                            <a href="#" class="proj-link"><i class="fas fa-table"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-                <div class="project-card reveal" data-category="data" style="transition-delay:0.2s">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=300&fit=crop" alt="Enquêtes SNCF">
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-tags">
+                <article class="project-card reveal" data-category="data">
+                    <div class="project-body">
+                        <div class="project-tags">
                             <span class="ptag">Enquêtes</span>
                             <span class="ptag cyan">SNCF</span>
                         </div>
+                        <h3>Enquêtes et analyse des flux voyageurs</h3>
+                        <p class="project-meta">TVE — Transport Voyageurs Études · 2022 – 2023</p>
+                        <p>Réalisation de plus de 50 enquêtes quantitatives sur la fréquentation du réseau SNCF normand. Analyse statistique des flux voyageurs et contribution aux rapports d'optimisation.</p>
                     </div>
-                    <div class="project-body">
-                        <h3>Enquêtes & Analyse Réseau SNCF</h3>
-                        <p>Réalisation de 50+ enquêtes quantitatives sur la fréquentation du réseau SNCF normand. Analyse statistique des flux voyageurs et production de rapports d'optimisation.</p>
-                        <div class="project-links-row">
-                            <a href="#" class="proj-link"><i class="fas fa-chart-pie"></i></a>
-                            <a href="#" class="proj-link"><i class="fas fa-train"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -385,14 +388,14 @@
     <!-- PARCOURS -->
     <section id="parcours" class="journey section">
         <div class="container">
-            <div class="reveal" style="margin-bottom:4rem">
-                <div class="section-label">Mon Histoire</div>
-                <h2 class="section-title">Parcours <em>Professionnel</em></h2>
+            <div class="reveal journey-header">
+                <div class="section-label">Mon parcours</div>
+                <h2 class="section-title">Expériences <em>et formation</em></h2>
             </div>
 
             <div class="journey-grid">
                 <div class="reveal">
-                    <div class="journey-col-title">Expériences</div>
+                    <h3 class="journey-col-title">Expériences</h3>
                     <div class="timeline">
                         <div class="tl-item">
                             <div class="tl-line">
@@ -401,8 +404,8 @@
                             </div>
                             <div class="tl-content">
                                 <div class="tl-date">Mai — Août 2025</div>
-                                <h3>Développeur Web — Stage</h3>
-                                <h4>CODAPA, Paris</h4>
+                                <h4>Développeuse web — Stage</h4>
+                                <p class="tl-org">CODAPA, Paris</p>
                                 <p>Conception et développement complet d'un site web pour une ONG. Gestion autonome du projet : analyse des besoins, déploiement et formation des utilisateurs.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">HTML / CSS / JS</span>
@@ -419,13 +422,13 @@
                             </div>
                             <div class="tl-content">
                                 <div class="tl-date">Avril — Mai 2024</div>
-                                <h3>Assistante de Gestion — Stage</h3>
-                                <h4>Royallaux SAS, Paris</h4>
-                                <p>Optimisation des processus administratifs et analyse de données pour l'aide à la décision. Automatisation de tableaux de bord via Excel VBA. Réduction de 30% du temps de traitement.</p>
+                                <h4>Assistante de gestion — Stage</h4>
+                                <p class="tl-org">Royallaux SAS, Paris</p>
+                                <p>Optimisation des processus administratifs et analyse de données pour l'aide à la décision. Automatisation de tableaux de bord sous Excel VBA : réduction de 30 % du temps de traitement des dossiers.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">Excel VBA</span>
                                     <span class="tl-tag">Data</span>
-                                    <span class="tl-tag">Digitalisation</span>
+                                    <span class="tl-tag">Processus</span>
                                 </div>
                             </div>
                         </div>
@@ -436,10 +439,10 @@
                                 <div class="tl-connector"></div>
                             </div>
                             <div class="tl-content">
-                                <div class="tl-date">Nov 2022 — Jan 2023</div>
-                                <h3>Enquêtrice Terrain</h3>
-                                <h4>TVE — Transport Voyageurs Études, Caen</h4>
-                                <p>Réalisation d'enquêtes quantitatives sur le réseau SNCF normand (50+ missions). Analyse statistique des flux voyageurs et production de rapports d'optimisation.</p>
+                                <div class="tl-date">Nov. 2022 — Janv. 2023</div>
+                                <h4>Enquêtrice terrain</h4>
+                                <p class="tl-org">TVE — Transport Voyageurs Études, Caen</p>
+                                <p>Plus de 50 enquêtes quantitatives sur la fréquentation du réseau SNCF normand. Analyse statistique des flux voyageurs et contribution aux rapports d'optimisation.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">Enquêtes</span>
                                     <span class="tl-tag">Statistiques</span>
@@ -453,10 +456,10 @@
                                 <div class="tl-dot cyan-dot"></div>
                             </div>
                             <div class="tl-content">
-                                <div class="tl-date cyan">Nov 2018 — Mai 2019</div>
-                                <h3>Animatrice Bénévole</h3>
-                                <h4>Association AZMARI — Maison des Femmes, Paris</h4>
-                                <p>Animation d'ateliers créatifs pour 30+ enfants. Développement de programmes pédagogiques innovants et coordination avec l'équipe éducative.</p>
+                                <div class="tl-date cyan">Nov. 2018 — Mai 2019</div>
+                                <h4>Animatrice bénévole</h4>
+                                <p class="tl-org">Association AZMARI — Maison des Femmes, Paris</p>
+                                <p>Animation d'ateliers créatifs pour plus de 30 enfants et coordination avec l'équipe éducative.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">Pédagogie</span>
                                     <span class="tl-tag">Animation</span>
@@ -467,8 +470,8 @@
                     </div>
                 </div>
 
-                <div class="reveal" style="transition-delay:0.2s">
-                    <div class="journey-col-title">Formation</div>
+                <div class="reveal">
+                    <h3 class="journey-col-title">Formation</h3>
                     <div class="timeline">
                         <div class="tl-item">
                             <div class="tl-line">
@@ -477,9 +480,9 @@
                             </div>
                             <div class="tl-content">
                                 <div class="tl-date">2025 — 2026</div>
-                                <h3>Master 2 — Management des Systèmes d'Information</h3>
-                                <h4>IAE La Rochelle, France</h4>
-                                <p>Conseil stratégique SI, transformation digitale, gestion de projets complexes et alignement business-IT. Modules : ERP, CRM, BI, Change Management.</p>
+                                <h4>Master 2 — Management des Systèmes d'Information</h4>
+                                <p class="tl-org">IAE La Rochelle</p>
+                                <p>Conseil stratégique SI, transformation digitale, gestion de projet et alignement métier et IT. Modules : ERP, CRM, Business Intelligence, conduite du changement.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">ERP / CRM</span>
                                     <span class="tl-tag">BI</span>
@@ -495,9 +498,9 @@
                             </div>
                             <div class="tl-content">
                                 <div class="tl-date">2024 — 2025</div>
-                                <h3>Master 1 — Management des Systèmes d'Information</h3>
-                                <h4>IAE La Rochelle, France</h4>
-                                <p>Gouvernance SI, business intelligence et management de projet agile. Projet fil rouge : Audit SI et recommandations stratégiques pour une ETI.</p>
+                                <h4>Master 1 — Management des Systèmes d'Information</h4>
+                                <p class="tl-org">IAE La Rochelle</p>
+                                <p>Gouvernance SI, Business Intelligence et management de projet agile. Projet fil rouge : audit SI et recommandations stratégiques pour une ETI.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">Gouvernance SI</span>
                                     <span class="tl-tag">Agile</span>
@@ -512,8 +515,8 @@
                             </div>
                             <div class="tl-content">
                                 <div class="tl-date cyan">2022 — 2023</div>
-                                <h3>Licence — Économie-Gestion, parcours Gestion Opérationnelle</h3>
-                                <h4>Université de Caen Normandie</h4>
+                                <h4>Licence Économie-Gestion, parcours Gestion opérationnelle</h4>
+                                <p class="tl-org">Université de Caen Normandie</p>
                                 <p>Gestion d'entreprise, comptabilité, analyse économique et statistiques. Mémoire sur la digitalisation des PME normandes.</p>
                                 <div class="tl-tags">
                                     <span class="tl-tag">Économie</span>
@@ -533,28 +536,28 @@
         <div class="container">
             <div class="qualities-header reveal">
                 <div class="section-label">Atouts</div>
-                <h2 class="section-title">Soft Skills qui font<br><em>la différence</em></h2>
+                <h2 class="section-title">Mes <em>qualités</em></h2>
             </div>
-            <div class="qualities-grid reveal" style="transition-delay:0.15s">
+            <div class="qualities-grid reveal">
                 <div class="qual-card">
-                    <div class="qual-icon"><i class="fas fa-crosshairs"></i></div>
-                    <h4>Esprit analytique</h4>
+                    <div class="qual-icon"><i class="fas fa-crosshairs" aria-hidden="true"></i></div>
+                    <h3>Esprit analytique</h3>
                     <p>Orientation résultats et capacité à structurer des problèmes complexes</p>
                 </div>
                 <div class="qual-card">
-                    <div class="qual-icon"><i class="fas fa-users-cog"></i></div>
-                    <h4>Leadership</h4>
-                    <p>Capacité à mobiliser les équipes et à piloter des projets transversaux</p>
+                    <div class="qual-icon"><i class="fas fa-users-cog" aria-hidden="true"></i></div>
+                    <h3>Leadership</h3>
+                    <p>Capacité à mobiliser une équipe et à faire avancer un projet</p>
                 </div>
                 <div class="qual-card">
-                    <div class="qual-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h4>Force de proposition</h4>
-                    <p>Créativité et initiative pour apporter des solutions innovantes</p>
+                    <div class="qual-icon"><i class="fas fa-lightbulb" aria-hidden="true"></i></div>
+                    <h3>Force de proposition</h3>
+                    <p>Initiative et créativité pour apporter des solutions concrètes</p>
                 </div>
                 <div class="qual-card">
-                    <div class="qual-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h4>Adaptabilité</h4>
-                    <p>Rigueur et capacité d'apprentissage continu dans des environnements variés</p>
+                    <div class="qual-icon"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
+                    <h3>Adaptabilité</h3>
+                    <p>Rigueur et capacité d'apprentissage dans des environnements variés</p>
                 </div>
             </div>
         </div>
@@ -566,60 +569,61 @@
             <div class="contact-grid">
                 <div class="reveal">
                     <div class="section-label">Contact</div>
-                    <h2 class="section-title">Collaborons<br><em>Ensemble</em></h2>
+                    <h2 class="section-title">Échangeons<br><em>ensemble</em></h2>
                     <p class="contact-tagline">
-                        Prête à contribuer à vos projets de transformation digitale ?<br>Discutons de votre besoin !
+                        Vous recherchez une stagiaire en gestion de projet SI ou en transformation digitale ? Parlons-en !
                     </p>
 
                     <div class="contact-methods">
                         <div class="c-method">
-                            <div class="c-method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="c-method-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
                             <div>
                                 <div class="c-method-label">Email</div>
                                 <div class="c-method-text"><a href="mailto:mendesmamita4@gmail.com">mendesmamita4@gmail.com</a></div>
                             </div>
                         </div>
                         <div class="c-method">
-                            <div class="c-method-icon"><i class="fas fa-phone"></i></div>
+                            <div class="c-method-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
                             <div>
                                 <div class="c-method-label">Téléphone</div>
-                                <div class="c-method-text"><a href="tel:+33753105305">+33 7 53 10 53 05</a></div>
+                                <div class="c-method-text"><a href="tel:+33753105305">07 53 10 53 05</a></div>
                             </div>
                         </div>
                         <div class="c-method">
-                            <div class="c-method-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="c-method-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
                             <div>
                                 <div class="c-method-label">LinkedIn</div>
-                                <div class="c-method-text"><a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank">linkedin.com/in/LourdiMendes</a></div>
+                                <div class="c-method-text"><a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank" rel="noopener">linkedin.com/in/lourdi-mendes-2538161a4</a></div>
                             </div>
                         </div>
                         <div class="c-method">
-                            <div class="c-method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="c-method-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                             <div>
                                 <div class="c-method-label">Localisation</div>
                                 <div class="c-method-text"><span>La Rochelle / Paris — Mobilité nationale</span></div>
                             </div>
                         </div>
                         <div class="c-method">
-                            <div class="c-method-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="c-method-icon"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
                             <div>
                                 <div class="c-method-label">Disponibilité</div>
-                                <div class="c-method-text"><span>Stage 3 à 6 mois — à partir de mars 2026</span></div>
+                                <div class="c-method-text"><span>Stage de 4 à 6 mois — disponible immédiatement</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="reveal" style="transition-delay:0.2s">
+                <div class="reveal">
                     <div class="cta-box">
-                        <h3>Envoyez-moi un message</h3>
-                        <p>Utilisez ce formulaire interactif pour discuter d'une opportunité de stage ou de collaboration en management SI et transformation digitale.</p>
-                        <a href="https://contact-form-Mendes.streamlit.app/" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-external-link-alt"></i> Ouvrir le formulaire
-                        </a>
-                        <div class="cta-form-note">
-                            <i class="fas fa-shield-alt"></i>
-                            Formulaire sécurisé — hébergé sur Streamlit
+                        <h3>Mon CV en un clic</h3>
+                        <p>Téléchargez mon CV au format PDF ou écrivez-moi directement pour discuter d'une opportunité de stage.</p>
+                        <div class="cta-actions">
+                            <a href="CV_Lourdi_Mendes.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Télécharger mon CV
+                            </a>
+                            <a href="mailto:mendesmamita4@gmail.com?subject=Proposition%20de%20stage" class="btn btn-outline">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> M'écrire
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -627,32 +631,34 @@
         </div>
     </section>
 
+    </main>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo">Lourdi  <span>Mendes</span></div>
-                    <p class="footer-tagline">Étudiante en Management des Systèmes d'Information, passionnée par la transformation digitale, la gestion de projets SI et l'innovation technologique.</p>
+                    <div class="footer-logo">Lourdi <span>Mendes</span></div>
+                    <p class="footer-tagline">Étudiante en Master 2 Management des Systèmes d'Information, à la recherche d'un stage de 4 à 6 mois en gestion de projet SI ou transformation digitale.</p>
                     <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/lourdi-mendes-2538161a4/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                         </a>
                         <a href="mailto:mendesmamita4@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                         <a href="tel:+33753105305" aria-label="Téléphone">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Navigation</h4>
+                    <h2>Navigation</h2>
                     <ul class="footer-links">
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#about">À propos</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#expertise">Compétences</a></li>
                         <li><a href="#projects">Projets</a></li>
                         <li><a href="#parcours">Parcours</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -660,13 +666,13 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Compétences</h4>
+                    <h2>Compétences</h2>
                     <ul class="footer-links">
-                        <li><a href="#expertise">Management SI</a></li>
-                        <li><a href="#expertise">Gestion de Projet</a></li>
-                        <li><a href="#expertise">Transformation Digitale</a></li>
+                        <li><a href="#expertise">Management des SI</a></li>
+                        <li><a href="#expertise">Gestion de projet</a></li>
+                        <li><a href="#expertise">Transformation digitale</a></li>
                         <li><a href="#expertise">Business Intelligence</a></li>
-                        <li><a href="#expertise">Développement Web</a></li>
+                        <li><a href="#expertise">Développement web</a></li>
                     </ul>
                 </div>
             </div>
@@ -685,7 +691,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
